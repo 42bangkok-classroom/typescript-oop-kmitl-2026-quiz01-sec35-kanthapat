@@ -1,20 +1,19 @@
-const input = process.argv[2];
-const point = Number(input)
-export {}
-if (Number.isNaN(point)) {
+let score = Number(process.argv[2]);
+
+if(Number.isNaN(score)) {
+    console.log('Invalid Input')
+} else if(score < 0 || score > 100) {
     console.log('Invalid Input');
-}else if (point < 0 || point > 100){
-    console.log('Invalid Input');
-}else{
-    if (point >= 80){
+} else {
+    if(score >= 80) {
         console.log('Grade is A');
-    }else if(point >= 70){
+    } else if(score >=70) {
         console.log('Grade is B');
-    }else if(point >=60){
+    } else if(score >=60) {
         console.log('Grade is C');
-    }else if(point >=50){
+    } else if(score >= 50) {
         console.log('Grade is D');
-    }else {
-       console.log('Grade is F');
+    } else {
+        console.log('Grade is F');
     }
 }
