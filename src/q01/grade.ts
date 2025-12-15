@@ -13,7 +13,9 @@ if(Number.isNaN(score)) {
         console.log('Grade is C');
     } else if(score >= 50) {
         console.log('Grade is D');
-    } else {
+    } else if(score < 50 || score > 0){
         console.log('Grade is F');
+    } else {
+        console.log('Invalid Input');
     }
 }
